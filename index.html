@@ -35,6 +35,36 @@
         background-color: grey;
         color: white;
       }
+      /* Styling for first-child of <li> to have a blue background */
+      ul li:first-child {
+        background-color: blue;
+      }
+      /* This removes underline from all <a> tag */
+      a {
+        text-decoration: none;
+      }
+      /* Styling for the last <a> to ensure it's underline */
+      a:last-of-type {
+        text-decoration: underline;
+      }
+      /* Styling if :not first child then set color to orange */
+      ul li:not(:first-child) {
+        color: orange;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+
+      /* Styling element if it is required and text then create a black outline */
+      input[type="text"] [required] {
+        box-shadow: 1px 1px 5px black;
+      }
     </style>
   </head>
   <body>
